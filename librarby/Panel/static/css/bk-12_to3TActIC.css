@@ -1,0 +1,96 @@
+html {
+    background-color: hsl(0, 0%, 7%);
+    font-family: Barlow, sans-serif;
+}
+
+:root {
+    --primary-color: hsl(212, 79%, 56%);
+    --high: hsl(0, 0%, 87%);
+    --medium: hsl(0, 0%, 60%);
+    --disabled: hsl(0, 0%, 38%);
+    --error: rgba(255, 0, 0, 0.678);
+    --dark: hsl(0, 1%, 18%);
+}
+
+.build {
+    color: var(--disabled);
+    position: fixed;
+    left: calc(50% - 36px);
+    bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.build > .may {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    color: var(--high);
+}
+
+.pbu-m {
+    width: 90%;
+    height: 100%;
+    padding-left: 30px;
+}
+
+p {
+    font-size: 1.3rem;
+    word-wrap: break-word;
+}
+
+.login-body {
+    background: url("/svg/bg.png") no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.login-info > img {
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container {
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    margin-top: 50px;
+}
+
+.login-pass {
+    width: 280px;
+    font-size: 24px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px / 5px;
+    transition: all .2s;
+}
+
+.login-pass:focus {
+    width: 350px;
+}
+
+@media (max-height: 600px) {
+    .login-container {
+        padding-top: 75px;
+    }
+}

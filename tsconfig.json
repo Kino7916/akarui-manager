@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "rootDir": "src",
+        "outDir": "librarby",
+        "target": "ES2020",
+        "module": "commonJS",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        
+    }
+}
